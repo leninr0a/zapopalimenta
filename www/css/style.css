@@ -2,6 +2,11 @@
 	background:url('../img/background.jpg');
 	background-position: center;
 	background-size: 220%;
+	height:100%;
+}
+
+.home-content .scroll{
+	height:100%;
 }
 
 .logo-zapopan{
@@ -14,7 +19,6 @@
 	text-align: center;
 	position: absolute;
     bottom: 0;
-    margin-bottom: 2em;
 	padding-left:1em;
 	padding-right:1em;
 	width:100%;
@@ -34,4 +38,70 @@
 
 .donate-content{
 	margin-top:2.5em;
+}
+
+.button-add-food{
+	width:3em;
+	height:3em;
+	border-radius: 100%;
+	border:none;
+}
+
+.input-weight{
+	width:50%;
+}
+
+.input-icon{
+	margin-right:1em;
+	color:gray;
+}
+
+.add-img-button{
+	width:8.5em;
+	height:8.5em;
+	border-radius: 100%;
+	cursor: pointer;
+	margin:0 auto;
+	display:block;
+	background: #eee;
+	padding-top:3em;
+}
+
+.img-add-button-container{
+	position:relative;
+	text-align: center;
+	margin-bottom:0.5em;
+}
+
+.cutlery-icon{
+	margin:0 auto;
+	display:inline;
+	color:#fff;
+}
+
+.camera-icon{
+	display:block;
+	margin-top:0.1em;
+	color:#fff;
+}
+
+.add-picture-text{
+	color:#fff;
+}
+
+.donate-content{
+	padding-top:1.7em;
+}
+
+.add-food-button-container{
+	position:relative;
+	margin-bottom:1.2em;
+	text-align: center
+}
+
+.donate-input{
+	border:none;
+	border-bottom:1px dashed #eee;
+	margin-left:0.5em;
+	margin-right:0.5em;
 }
