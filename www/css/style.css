@@ -1,1 +1,37 @@
-/* Empty. Add your own CSS if you like */
+.home-content{
+	background:url('../img/background.jpg');
+	background-position: center;
+	background-size: 220%;
+}
+
+.logo-zapopan{
+	margin: 0 auto;
+	display: block;
+	fill-opacity: 0.4;
+}
+
+.home-buttons-container{
+	text-align: center;
+	position: absolute;
+    bottom: 0;
+    margin-bottom: 2em;
+	padding-left:1em;
+	padding-right:1em;
+	width:100%;
+}
+
+.button{
+	color:#fff;
+}
+
+.button-orange{
+	background:orange;
+}
+
+.button-gray{
+	background:#333333;
+}
+
+.donate-content{
+	margin-top:2.5em;
+}
