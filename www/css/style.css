@@ -105,3 +105,25 @@
 	margin-left:0.5em;
 	margin-right:0.5em;
 }
+
+.donate-details-content{
+	margin-top:3em;
+}
+
+.icon-address{
+	margin-top:0.8em;
+	margin-right:0.5em;
+}
+
+.address-modal-content .scroll{
+	height:100%;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-title{
+	text-align: center !important;
+}

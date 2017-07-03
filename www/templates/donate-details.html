@@ -1,0 +1,38 @@
+<ion-view  view-title="donate-details">
+<ion-header>
+<div class="bar bar-header bar-light">
+  <h1 class="title">Detalles de la donaci&oacute;n</h1>
+</div>
+</ion-header>
+  <ion-content class="donate-details-content">
+  	<div class="list">
+
+  <div class="item item-divider">
+    Tus direcciones
+  </div>
+
+  <li class="item item-toggle item-icon-left item-icon-right" ng-repeat="adress in adresses">
+     <i class="icon ion-ios-location " style="color:#333"></i>
+     <h2>{{adress.street1}}</h2>
+     <p>{{adress.street2}}</p>
+	 <p><small>{{adress.city}}</small></p>
+     <label class="toggle toggle-assertive">
+       <input type="radio" name="adress">
+       <div class="track">
+         <div class="handle"></div>
+       </div>
+     </label>
+     
+     
+  </li>
+</div>
+	<div class="add-food-button-container" ng-click="showModal()">
+		<a class="button button-outline  button-balanced">Añadir direcci&oacute;n</a>
+	</div>
+
+  </ion-content>
+  <div class="bar bar-footer bar-balanced" ng-click="goDonateDetails()">
+  	<div class="title">Publicar donaci&oacute;n</div>
+  	
+  </div>
+ </ion-view>

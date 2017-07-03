@@ -8,7 +8,7 @@
   	<div class="img-add-button-container">
 		<div class="add-img-button">
 			<i class="fa fa-cutlery fa-2x cutlery-icon"></i>
-			<p class="add-picture-text"><small>Añade una foto</small></p>
+			<p class="add-picture-text" ng-click="takePhoto()"><small>Añade una foto</small></p>
 		</div>
   	</div>
 	<div class="list">
@@ -21,7 +21,7 @@
 	    	<input type="text" placeholder="Peso/Cantidad" ng-model="food.weight">
 	  	</div>
 	    <select ng-model="food.measurement">
-	      <option selected>Kg</option>
+	      <option ng-selected="true">Kg</option>
 	      <option>Lt</option>
 	      <option>Unidades</option>
 	    </select>
@@ -36,7 +36,7 @@
 			</form>
 	</div>
 	<div class="add-food-button-container" ng-click="addFood()">
-		<a class="button button-outline icon-right ion-plus button-balanced">Agregar</a>
+		<a class="button button-outline icon-right ion-plus button-balanced">Agregar alimento</a>
 	</div>
 
 
@@ -80,7 +80,7 @@
 
 	</div>
   </ion-content>
-  <div class="bar bar-footer bar-balanced">
+  <div class="bar bar-footer bar-balanced" ng-click="goDonateDetails()">
   	<div class="title">Continuar</div>
   </div>
 </ion-view>
