@@ -1,13 +1,58 @@
-<ion-view  view-title="home">
-  <ion-content class="home-content">
+
+<ion-side-menus>
+  <!-- Left menu -->
+  <ion-side-menu side="left" class="menu">
+      <div class="img-profile-container"></div>
+      <h3 class="text-center">Pedro Perez</h3>
+      <br>
+      <div class="list">
+
+  <a class="item item-icon-right" href="#">
+    Actualizar datos
+    <i class="icon ion-ios-person"></i>
+  </a>
+
+  <a class="item item-icon-right" href="#">
+    Mis direcciones
+    <i class="icon ion-ios-home"></i>
+  </a>
+
+  <a class="item item-icon-right" href="#">
+    <i class="icon ion-heart"></i>
+    Mis donaciones
+    <span class="badge badge-assertive">3</span>
+  </a>
+
+  <a class="item item-icon-right" href="#">
+    <i class="icon ion-heart"></i>
+    Mis recolecciones
+    <span class="badge badge-assertive">0</span>
+  </a>
+
+</div>
+  </ion-side-menu>
+
+  <ion-side-menu-content>
+  <!-- Main content, usually <ion-nav-view> -->
+    
+    <ion-view  view-title="home">
+    
+     <ion-content class="home-content">
+    <div class="relative">
+      <i class="fa fa-bars menu-button" ng-click="toggleLeft()"></i>
+    </div>
     <img src="img/logoz.svg" class="logo-zapopan" alt="">
     <div class="home-buttons-container">
       <button class="button button-block button-orange" ng-click="goDonate()">
         Quiero donar
       </button>
-      <button class="button button-block button-gray" ng-click="goRecolect()">
+      <button class="button button-block button-gray" menu-toggle = "left" ng-click="toggleLeft()">
         Quiero recolectar
       </button>
     </div>
   </ion-content>
 </ion-view>
+  </ion-side-menu-content>
+
+</ion-side-menus>
+ 

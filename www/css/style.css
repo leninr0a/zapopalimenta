@@ -127,3 +127,31 @@
 .modal-title{
 	text-align: center !important;
 }
+
+.relative{
+	position:relative;
+}
+
+.menu-button{
+	margin-left:0.2em;
+	color: #fff;
+	font-size:2em;
+	margin-top:0.2em;
+	background-color:rgba(0,0,0,0.3);
+	padding:0.2em;
+	border-radius: 100%; 
+	width:2em;
+	height: 2em;
+	text-align: center;
+	padding-top:0.4em;
+}
+
+.img-profile-container{
+	width:10em;
+	height:10em;
+	border-radius: 100%;
+	background:url('../img/profile.jpg');
+	background-size: cover;
+	display:block;
+	margin: 1em auto;
+}

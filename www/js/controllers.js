@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 
 /*Home Controller*/
-.controller('homeCtrl', function($http,$scope,$window){
+.controller('homeCtrl', function($http,$scope,$window, $ionicSideMenuDelegate){
 	console.log("hola mundo desde ");
 
 	$scope.goDonate = function(){
@@ -13,6 +13,10 @@ angular.module('starter.controllers', [])
 		$window.location.assign('#/recolect');
 	};
 
+    $scope.toggleLeft = function() {
+      console.log("toggleLeft");
+    $ionicSideMenuDelegate.toggleLeft();
+  };
 
 })
 
@@ -146,7 +150,7 @@ angular.module('starter.controllers', [])
 .controller('donateDetailsCtrl', function($http,$scope,$window,$ionicModal, $cordovaGeolocation){
 	$scope.adresses = [
 		{
-			street1: 'Calle Axayacatl 118',
+			street1: 'Calle Axayacatl Holi',
 			street2: 'Cd del Sol',
 			city: '45050 Zapopan, Jal',
 			phone: '335570092854'
